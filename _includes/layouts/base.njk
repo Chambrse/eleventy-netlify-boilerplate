@@ -5,16 +5,9 @@
 
 	<body>
 
-		<header>
-			<em>
-				<a href="{{ '/' | url }}">{{ metadata.title }}</a>
-			</em>
-			{% include "components/nav.njk" %}
-		</header>
+		{% include "components/nav.njk" %}
 
-		<main>
-			{{ layoutContent | safe }}
-		</main>
+		{{ layoutContent | safe }}
 
 		{% include "components/footer.njk" %}
 
