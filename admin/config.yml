@@ -48,7 +48,7 @@ collections:
   - name: "authors"
     label: "Author"
     folder: "authors"
-    create: true
+    create: false
     slug: "{{fields.name}}"
     fields:
       - {label: "Name", name: "name", widget: "string"}

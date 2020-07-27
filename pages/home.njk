@@ -1,0 +1,10 @@
+---
+layout: layouts/base.njk
+title: Semicolon Soup
+subtitle: Coding and other Stuff
+heroImage: static/img/jshome.jpg
+permalink: /
+---
+
+{% set postslist = collections.post %}
+{% include "components/postslist.njk" %}
