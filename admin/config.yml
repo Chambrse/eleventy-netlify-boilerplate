@@ -24,9 +24,10 @@ collections:
         collection: "authors"
         searchFields: ["name", "github"]
         valueField: "name"
-      - { label: "Summary", name: "summary", widget: "text" }
+      - { label: "Subtitle", name: "subtitle", widget: "text" }
       - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
       - { label: "Body", name: "body", widget: "markdown" }
+      # - { label: 'html', name: 'html', widget: 'code',  default_language: 'html'}
   # Our pages e.g. About
   - name: "pages"
     label: "Page"
