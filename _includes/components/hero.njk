@@ -6,6 +6,11 @@
                 <div class="site-heading">
                     <h1>{{title}}</h1>
                     <span class="subheading">{{subtitle}}</span>
+                    {% if author %}
+                        <p class="post-meta">Posted by
+                    <a href='/authors/{{ author | slug }}'>{{author}}</a>
+                    on {{ date | readableDate }}</p>
+                    {% endif %}
                 </div>
             </div>
         </div>

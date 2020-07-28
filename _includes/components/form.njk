@@ -1,4 +1,4 @@
-<form name="contact" method="POST" netlify>
+{# <form name="contact" method="POST" netlify>
   <label for="name">Name</label>
   <input type="text" name="name" id="name" autocomplete="name" placeholder="Your name" title="Please enter your name" required>
   <label for="email">Email</label>
@@ -6,4 +6,39 @@
   <label for="message">Message</label>
   <textarea name="message" id="message" placeholder="Write your message here" rows="7" required></textarea>
   <button type="submit" name="submit">Send Message</button>
+</form> #}
+<form name="sentMessage" method="POST" id="contactForm" netlify>
+  <div class="control-group">
+    <div class="form-group floating-label-form-group controls">
+      <label>Name</label>
+      <input type="text" name="name" class="form-control" placeholder="Name" id="name">
+      <p class="help-block text-danger"></p>
+    </div>
+  </div>
+  <div class="control-group">
+    <div class="form-group floating-label-form-group controls">
+      <label>Email Address</label>
+      <input name="email" type="email" class="form-control" placeholder="Email Address" id="email">
+      <p class="help-block text-danger"></p>
+    </div>
+  </div>
+  <div class="control-group">
+    <div class="form-group col-xs-12 floating-label-form-group controls">
+      <label>Phone Number</label>
+      <input name="number" type="tel" class="form-control" placeholder="Phone Number" id="phone">
+      <p class="help-block text-danger"></p>
+    </div>
+  </div>
+  <div class="control-group">
+    <div class="form-group floating-label-form-group controls">
+      <label>Message</label>
+      <textarea name="message" rows="5" class="form-control" placeholder="Message" id="message" ></textarea>
+      <p class="help-block text-danger"></p>
+    </div>
+  </div>
+  <br>
+  <div id="success"></div>
+  <div class="form-group">
+    <button type="submit" class="btn btn-primary" id="sendMessageBuwtton">Send</button>
+  </div>
 </form>
